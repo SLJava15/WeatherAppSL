@@ -1,0 +1,5 @@
+<div class="container">
+  <app-header (zipchange)="onZipChange($event)" (useTz)="onUseTzChange($event)" [title]="title"></app-header>
+  <app-weather-list [data]="forecastData" [loading]="loading" [usedTz]="usedTz"></app-weather-list>
+</div>
+
